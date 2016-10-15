@@ -1,0 +1,354 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Chantilly Robotics - 612</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <script src="scripts/timer.js"></script>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+</head>
+
+<body>
+    <script type="text/javascript">
+        //sorry for being lazy :(
+       function toggle_visibility(id) {
+           var e = document.getElementById(id);
+           if(e.style.display == 'block')
+              e.style.display = 'none';
+           else
+              e.style.display = 'block';
+       }
+       </script>
+    <div id="header">
+        <a href="index.html">
+            <img src="img/logo.png" id="logoimg">
+        </a>
+        <ul id="info">
+            <li><a href="mailto:chantilly.612@gmail.com" id="email">E-mail</a></li>
+            <li><a href="https://www.facebook.com/ChantillyRoboticsFirstTeam612/" id="facebook">Facebook</a></li>
+            <li><a href="https://www.youtube.com/user/ChantillyRobotics612" id="newsletter">YouTube</a></li>
+            <li><a href="http://chantillyrobotics.slack.com/" id="slack">Slack</a></li>
+        </ul>
+    </div>
+
+    <div id="top">
+        <center>
+            <ul>
+                <li><button id="homebtn"><img src="img/home.png" id="home"></button></li>
+                <li><button onclick="toggle_visibility('about')" class="btn">About Us</button></li>
+                <li><button onclick="toggle_visibility('first')" class="btn">About FIRST</button></li>
+                <li><button onclick="toggle_visibility('outreach')" class="btn">Outreach</button></li>
+                <li><button onclick="toggle_visibility('sponsor')" class="btn">Sponsors</button></li>
+                <li><button onclick="toggle_visibility('retu')" class="btn">Resources/Tutorials</button></li>
+                <li><button onclick="toggle_visibility('calendar')" class="btn">Calendar</button></li>
+                <li><button onclick="toggle_visibility('contact')" class="btn">Contact Us</button></li>
+            </ul>
+        </center>
+
+        <!--Hide and show these-->
+        <div id="about" class="expandable" style="display: none">
+            <h1>ABOUT</h1>
+            <h3>Learn About 612</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget auctor lacus, ac
+                    hendrerit nisl. Pellentesque pellentesque tellus et nulla maximus faucibus. Vivamus
+                    ultricies odio libero, gravida interdum massa efficitur ac. Cras odio arcu, varius id
+                    dolor in, facilisis gravida metus. Phasellus a ante at metus facilisis aliquam eget sit
+                    amet est. Proin nibh libero, convallis quis lacinia in, malesuada a ante. Morbi porttitor
+                    suscipit enim eget mattis. Proin congue tellus id rutrum pretium. Cras feugiat enim vel orci
+                    rhoncus ullamcorper. Praesent id nunc sed eros mattis feugiat. Maecenas ultrices magna felis,
+                    vitae pellentesque tellus bibendum sit amet. Morbi nec orci vel urna porta condimentum. Duis
+                    ligula nibh, accumsan id ante vitae, imperdiet ullamcorper ligula. In sit amet justo in erat
+                    pellentesque rutrum.
+                </p>
+
+            <h3>Team History</h3>
+                <p>
+                    In nec nisl ipsum. Curabitur ultricies eget est efficitur malesuada. Sed fermentum nisl quis
+                    nunc fringilla, vel tincidunt sem tempus. Fusce vitae fringilla purus. Vestibulum aliquam
+                    lobortis lectus aliquam lacinia. Aliquam vel libero pharetra, molestie nulla eget, bibendum mi.
+                </p>
+            <h3>Team Achievemetns</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non sapien fermentum, lobortis risus non,
+                    varius eros. Donec aliquet ultricies felis vel placerat. Donec lacus elit, egestas sed consectetur et,
+                    porttitor ut diam. Morbi molestie odio vitae augue fringilla, eget ullamcorper nisl porttitor. Ut dapibus
+                    ante eget vestibulum dictum. Proin rutrum sapien ut ligula condimentum, sit amet venenatis leo pellentesque.
+                    Nam ornare rhoncus fermentum. Ut in tristique magna, a porttitor urna. Etiam vitae lacus diam. Fusce sed libero
+                    id massa dignissim mattis. Morbi mi erat, tincidunt quis imperdiet at, suscipit vel eros. Donec fermentum
+                    pellentesque convallis. Mauris vehicula semper neque, vitae dapibus ligula sollicitudin nec. Suspendisse quis
+                    luctus arcu. Donec a lobortis sapien. Curabitur sapien nisl, venenatis in enim ac, cursus condimentum tortor.
+                </p>
+
+            <h3>Pictures and Videos</h3>
+                <p>
+                    Fusce diam velit, consequat a scelerisque nec, pretium a mauris. Praesent sagittis libero augue, eu ultricies
+                    ipsum sodales id. Fusce eget convallis odio, eget posuere libero. Praesent id posuere orci.
+                </p>
+            <h3>Mentors</h3>
+                <p>
+                    Duis in porta nunc. Sed suscipit semper rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                    fames ac turpis egestas. Sed sodales sem et commodo vulputate. Vestibulum sit amet eros at ex tempus euismod sed quis
+                    libero. Nam tincidunt odio ac consequat feugiat. Mauris placerat molestie est, non varius sem tincidunt ut.
+                </p>
+        </div>
+
+        <div id="first" class="expandable" style="display: none">
+            <h1>ABOUT FIRST</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget auctor lacus, ac
+                hendrerit nisl. Pellentesque pellentesque tellus et nulla maximus faucibus. Vivamus
+                ultricies odio libero, gravida interdum massa efficitur ac. Cras odio arcu, varius id
+                dolor in, facilisis gravida metus. Phasellus a ante at metus facilisis aliquam eget sit
+                amet est. Proin nibh libero, convallis quis lacinia in, malesuada a ante. Morbi porttitor
+                suscipit enim eget mattis. Proin congue tellus id rutrum pretium. Cras feugiat enim vel orci
+                rhoncus ullamcorper. Praesent id nunc sed eros mattis feugiat. Maecenas ultrices magna felis,
+                vitae pellentesque tellus bibendum sit amet. Morbi nec orci vel urna porta condimentum. Duis
+                ligula nibh, accumsan id ante vitae, imperdiet ullamcorper ligula. In sit amet justo in erat
+                pellentesque rutrum.
+            </p>
+
+            <p>
+                In nec nisl ipsum. Curabitur ultricies eget est efficitur malesuada. Sed fermentum nisl quis
+                nunc fringilla, vel tincidunt sem tempus. Fusce vitae fringilla purus. Vestibulum aliquam
+                lobortis lectus aliquam lacinia. Aliquam vel libero pharetra, molestie nulla eget, bibendum mi.
+            </p>
+        </div>
+
+        <div id="outreach" class="expandable" style="display: none">
+            <h1>OUTREACH</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget auctor lacus, ac
+                hendrerit nisl. Pellentesque pellentesque tellus et nulla maximus faucibus. Vivamus
+                ultricies odio libero, gravida interdum massa efficitur ac. Cras odio arcu, varius id
+                dolor in, facilisis gravida metus. Phasellus a ante at metus facilisis aliquam eget sit
+                amet est. Proin nibh libero, convallis quis lacinia in, malesuada a ante. Morbi porttitor
+                suscipit enim eget mattis. Proin congue tellus id rutrum pretium. Cras feugiat enim vel orci
+                rhoncus ullamcorper. Praesent id nunc sed eros mattis feugiat. Maecenas ultrices magna felis,
+                vitae pellentesque tellus bibendum sit amet. Morbi nec orci vel urna porta condimentum. Duis
+                ligula nibh, accumsan id ante vitae, imperdiet ullamcorper ligula. In sit amet justo in erat
+                pellentesque rutrum.
+            </p>
+
+            <p>
+                In nec nisl ipsum. Curabitur ultricies eget est efficitur malesuada. Sed fermentum nisl quis
+                nunc fringilla, vel tincidunt sem tempus. Fusce vitae fringilla purus. Vestibulum aliquam
+                lobortis lectus aliquam lacinia. Aliquam vel libero pharetra, molestie nulla eget, bibendum mi.
+            </p>
+        </div>
+
+        <div id="sponsor" class="expandable" style="display: none">
+            <h1>OUR SPONSORS</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget auctor lacus, ac
+                hendrerit nisl. Pellentesque pellentesque tellus et nulla maximus faucibus. Vivamus
+                ultricies odio libero, gravida interdum massa efficitur ac. Cras odio arcu, varius id
+                dolor in, facilisis gravida metus. Phasellus a ante at metus facilisis aliquam eget sit
+                amet est. Proin nibh libero, convallis quis lacinia in, malesuada a ante. Morbi porttitor
+                suscipit enim eget mattis. Proin congue tellus id rutrum pretium. Cras feugiat enim vel orci
+                rhoncus ullamcorper. Praesent id nunc sed eros mattis feugiat. Maecenas ultrices magna felis,
+                vitae pellentesque tellus bibendum sit amet. Morbi nec orci vel urna porta condimentum. Duis
+                ligula nibh, accumsan id ante vitae, imperdiet ullamcorper ligula. In sit amet justo in erat
+                pellentesque rutrum.
+            </p>
+
+            <p>
+                In nec nisl ipsum. Curabitur ultricies eget est efficitur malesuada. Sed fermentum nisl quis
+                nunc fringilla, vel tincidunt sem tempus. Fusce vitae fringilla purus. Vestibulum aliquam
+                lobortis lectus aliquam lacinia. Aliquam vel libero pharetra, molestie nulla eget, bibendum mi.
+            </p>
+        </div>
+
+        <div id="retu" class="expandable" style="display: none">
+            <h1>RESOURCES AND TUTORIALS</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget auctor lacus, ac
+                hendrerit nisl. Pellentesque pellentesque tellus et nulla maximus faucibus. Vivamus
+                ultricies odio libero, gravida interdum massa efficitur ac. Cras odio arcu, varius id
+                dolor in, facilisis gravida metus. Phasellus a ante at metus facilisis aliquam eget sit
+                amet est. Proin nibh libero, convallis quis lacinia in, malesuada a ante. Morbi porttitor
+                suscipit enim eget mattis. Proin congue tellus id rutrum pretium. Cras feugiat enim vel orci
+                rhoncus ullamcorper. Praesent id nunc sed eros mattis feugiat. Maecenas ultrices magna felis,
+                vitae pellentesque tellus bibendum sit amet. Morbi nec orci vel urna porta condimentum. Duis
+                ligula nibh, accumsan id ante vitae, imperdiet ullamcorper ligula. In sit amet justo in erat
+                pellentesque rutrum.
+            </p>
+
+            <p>
+                In nec nisl ipsum. Curabitur ultricies eget est efficitur malesuada. Sed fermentum nisl quis
+                nunc fringilla, vel tincidunt sem tempus. Fusce vitae fringilla purus. Vestibulum aliquam
+                lobortis lectus aliquam lacinia. Aliquam vel libero pharetra, molestie nulla eget, bibendum mi.
+            </p>
+        </div>
+
+        <div id="calendar" class="expandable" style="display: none">
+            <h1>CALENDAR</h1>
+            <iframe src="https://calendar.google.com/calendar/embed?src=ahmad.eb.bamba%40gmail.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <div id="contact" class="expandable" style="display: none">
+            <h1>CONTACT</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget auctor lacus, ac
+                hendrerit nisl. Pellentesque pellentesque tellus et nulla maximus faucibus. Vivamus
+                ultricies odio libero, gravida interdum massa efficitur ac. Cras odio arcu, varius id
+                dolor in, facilisis gravida metus. Phasellus a ante at metus facilisis aliquam eget sit
+                amet est. Proin nibh libero, convallis quis lacinia in, malesuada a ante. Morbi porttitor
+                suscipit enim eget mattis. Proin congue tellus id rutrum pretium. Cras feugiat enim vel orci
+                rhoncus ullamcorper. Praesent id nunc sed eros mattis feugiat. Maecenas ultrices magna felis,
+                vitae pellentesque tellus bibendum sit amet. Morbi nec orci vel urna porta condimentum. Duis
+                ligula nibh, accumsan id ante vitae, imperdiet ullamcorper ligula. In sit amet justo in erat
+                pellentesque rutrum.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="content" class="w3-half lcol">
+            <div id="slideshow">
+                <img src="img/slideshow/1.jpg" style="max-width: 95%;" title="Sad static slideshow :(">
+                <div id="slmenu">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li id="last">4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="main" class="w3-half rcol">
+            <div id="news" class="w3-rest">
+                    <h1>News Real!</h1>
+
+                    <h3>Blah blah blah</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend tristique urna nec auctor.
+                        Nulla venenatis quis velit sed euismod. Ut iaculis fringilla purus, nec sollicitudin ex pretium sed.
+                        Vestibulum aliquet urna ut nisi dignissim pulvinar. Nunc urna neque, malesuada ut sem vitae, sagittis
+                        interdum ligula. Pellentesque fringilla ex ac pretium cursus. Nam non gravida lorem, ac imperdiet metus.
+                        Cras pellentesque ut purus eu dictum. Fusce leo neque, sagittis id tortor at, rhoncus malesuada neque.
+                        Integer interdum tempus sagittis. Aliquam erat volutpat. Fusce id ex a purus iaculis eleifend convallis
+                        eget libero. Aenean pulvinar ultrices augue. Curabitur tempus sapien in malesuada lobortis. Suspendisse potenti.
+                        Fusce sagittis augue nibh, ut ultricies nisl scelerisque non.
+                    </p>
+
+                    <h3>Blah blah blah</h3>
+                    <p>
+                        Vivamus tincidunt turpis mi, non fermentum urna bibendum et. Cras feugiat, nisi eget dignissim ultrices,
+                        lectus mauris vehicula turpis, at rutrum ipsum nibh non enim. Aenean nec condimentum sem, a tempus ex. Donec
+                        commodo cursus lacus, nec eleifend lacus. Phasellus augue leo, sagittis a dolor at, fermentum scelerisque ante.
+                        Mauris porttitor magna vel turpis imperdiet, eget lacinia metus varius. Sed nulla nisl, venenatis vitae magna in,
+                        hendrerit vulputate mauris. Sed nec tristique nunc, sit amet rhoncus nisl. Nam luctus luctus est ut venenatis. Proin
+                        neque nibh, vulputate vel lacus nec, pretium tincidunt orci. Vestibulum blandit scelerisque sapien in feugiat. Suspendisse
+                        potenti. Praesent semper dui orci, fermentum ullamcorper tortor rutrum id. Ut ornare sit amet arcu eu fringilla. Praesent
+                        id vehicula libero.
+                    </p>
+
+                    <h3>Blah blah blah</h3>
+                    <p>
+                        Mauris nunc odio, ullamcorper scelerisque erat non, viverra mollis justo. Phasellus ut pretium justo. Duis sit amet porta
+                        magna, at tempus nisi. Integer ut eros sed lorem scelerisque vestibulum eget tincidunt metus. Fusce at arcu ut leo eleifend
+                        fringilla et id arcu. Pellentesque non mauris at diam imperdiet posuere in eget leo. Ut eget lacus enim. Morbi volutpat varius
+                        facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam tristique gravida varius. Quisque sollicitudin
+                        sollicitudin ligula, et vehicula tortor volutpat ut. Donec in ornare quam, et ornare urna. Etiam efficitur nisi ac consequat
+                        varius. Mauris tincidunt, magna eu iaculis fringilla, enim lorem laoreet urna, et iaculis quam lorem eu lorem. Suspendisse
+                        potenti.
+                    </p>
+            </div>
+
+            <!--
+            <div id="calendar_again">
+                <iframe src="https://calendar.google.com/calendar/embed?src=ahmad.eb.bamba%40gmail.com&ctz=America/New_York" style="border: 0; width: 100%; height: 300px" frameborder="0" scrolling="no" class="w3-rest"></iframe>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <div id="Welcome">
+        <center><h1>Six what??!?!</h1></center>
+        <p style="padding: 0 15% 0 15%;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend tristique urna nec auctor. Nulla venenatis
+            quis velit sed euismod. Ut iaculis fringilla purus, nec sollicitudin ex pretium sed. Vestibulum aliquet urna ut nisi
+            dignissim pulvinar. Nunc urna neque, malesuada ut sem vitae, sagittis interdum ligula. Pellentesque fringilla ex ac
+            pretium cursus. Nam non gravida lorem, ac imperdiet metus. Cras pellentesque ut purus eu dictum. Fusce leo neque,
+            sagittis id tortor at, rhoncus malesuada neque. Integer interdum tempus sagittis. Aliquam erat volutpat. Fusce id ex
+            a purus iaculis eleifend convallis eget libero. Aenean pulvinar ultrices augue. Curabitur tempus sapien in malesuada
+            lobortis. Suspendisse potenti. Fusce sagittis augue nibh, ut ultricies nisl scelerisque non.
+        </p>
+    </div>
+
+    <center>
+        <div id="timer" class="w3-rest">
+            <h2>Time until Kickoff (FIRST Steamworks):</h2>
+            <div id="time1"></div>
+        </div>
+    </center>
+
+    <div class="row">
+        <div class="lcol w3-half">
+            <center><h1>Awards:</h1></center>
+            <p>
+                <img src="img/trophy.png" class="trophy"> Engineering Inspiration: 2015, 2014
+            </p>
+            <p>
+                <img src="img/trophy.png" class="trophy"> World Champtionship Appearance: 2015, 2014
+            </p>
+            <p>
+                <img src="img/trophy.png" class="trophy"> Team Spirit: 2016
+            </p>
+            <p>
+                <img src="img/trophy.png" class="trophy"> Hot cool award: 2013, 2012, 2011
+            </p>
+            <p>
+                <img src="img/trophy.png" class="trophy"> Hot cool award: 2016, 2010
+            </p>
+
+        </div>
+        <div class="rcol w3-half">
+            <center><a href="sponsors.html"><h1>Meet our Sponsors</h1></a></center>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus luctus congue.
+                Donec sed lacus massa. Sed ut ligula quis magna aliquam ornare. Aliquam in varius purus.
+                Maecenas finibus iaculis risus ac pretium. Pellentesque consectetur leo non leo placerat, sit
+                amet aliquam nisl ultrices. Duis tristique arcu sed lacus rhoncus accumsan. Vestibulum fringilla
+                luctus augue, a commodo nunc faucibus sit amet. In elementum mattis lobortis. In faucibus orci eget
+                mattis imperdiet. Curabitur dignissim augue in rutrum egestas. Sed mollis vestibulum ligula sit amet accumsan.
+            </p>
+
+            <p>
+                Aliquam finibus tempus pellentesque. Sed sed maximus ligula. Donec auctor id justo elementum ultricies.
+                Etiam mattis nisi dolor, id rhoncus nibh blandit mattis. Ut dapibus ipsum et ante iaculis finibus.
+                Vivamus mattis pretium metus, eget rutrum dolor egestas et. Aenean varius ligula urna, cursus fringilla dui
+                sodales non. Integer vitae quam non sapien facilisis mattis. Nullam in bibendum orci. Aenean blandit nisi et
+                odio molestie, non malesuada nisi placerat. Morbi sollicitudin vulputate scelerisque. Pellentesque congue
+                magna ac felis efficitur, a porta urna tempor. Curabitur at porttitor tellus. Donec non sapien hendrerit,
+                lacinia mauris eu, bibendum arcu.
+            </p>
+        </div>
+    </div>
+
+    <div id="end" style="background-color: black; overflow-y: auto;">
+        <center>
+            <p style="padding-top: 12px; font-size: 12px;">
+                Copyright (c) 2016 Chantilly Robotics All Rights Reserved. Have questions? <a href="mailto:chantilly.612@gmail.com">Contact us!</a>
+            </p>
+
+            <p style="padding-top: 15px; font-size: 12px;">
+                FIRST, FRC, FTC, FLL, JR.FLL, COOPERTITION, GRACIOUS PROFESSIONALISM, RECYCLE RUSH, AERIAL ASSIST, ULTIMATE ASCENT,
+                REBOUND RUMBLE, LOGOMOTION, BREAKAWAY, LUNACY, FIRST OVERDRIVE, RACK N ROLL, AIM HIGH, TRIPLE PLAY, FIRST FRENZY:
+                RAISING THE BAR, STACK ATTACK, ZONE ZEAL, DIABOLICAL DYNAMICS, CO-OPERTITION FIRST, and DOUBLE TROUBLE are registered
+                trademarks of United States Foundation for Inspiration and Recognition of Science and Technology AKA US FIRST
+                CORPORATION NEW HAMPSHIRE 200 Bedford Street Manchester NEW HAMPSHIRE 03101. USFIRST trademarks and logos used
+                with permission as a USFIRST team.
+            </p>
+        </center>
+    </div>
+
+</body>
+
+</html>

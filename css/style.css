@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Aldrich');
 @import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
 
 body {
     background-color: #232426;
     margin-top: 0 20% 0 20%;
+    min-width: 1035px;
 }
 
 h1 {
@@ -19,6 +21,12 @@ h2 {
 h3 {
     color: white;
     font-family: 'Aldrich', sans-serif !important;
+}
+
+h4 {
+    font-family: 'Black Ops One', cursive !important;
+    color: white;
+    font-size: 105px;
 }
 
 p {
@@ -37,7 +45,7 @@ ul li {
 
 a {
     color: #5395ff;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:active {
@@ -46,7 +54,7 @@ a:active {
 
 a:visited {
     text-decoration: line-through;
-    color: #979ca3;
+    color: #545454;
 }
 
 #header {
@@ -55,10 +63,11 @@ a:visited {
     background-color: black;
     margin-top: 0px;
     padding-top: 0px;
-    position: fixed;
-    top: 0px;
+    position: absolute;
+    top: 0;
     left: 0px;
     min-width: 846px;
+    z-index: 1;
 }
 
 #logoimg {
@@ -83,9 +92,6 @@ a:visited {
     background-image: -ms-linear-gradient(top, #7634d9, #38199e);
     background-image: -o-linear-gradient(top, #7634d9, #38199e);
     background-image: linear-gradient(to bottom, #7634d9, #38199e);
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
     font-family: 'Aldrich', sans-serif !important;
     color: #ffffff;
     font-size: 20px;
@@ -110,9 +116,6 @@ a:visited {
     background-image: -ms-linear-gradient(top, #3b5998, #112c61);
     background-image: -o-linear-gradient(top, #3b5998, #112c61);
     background-image: linear-gradient(to bottom, #3b5998, #112c61);
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
     font-family: 'Aldrich', sans-serif !important;
     color: #ffffff;
     font-size: 20px;
@@ -137,9 +140,6 @@ a:visited {
     background-image: -ms-linear-gradient(top, #eb1717, #991616);
     background-image: -o-linear-gradient(top, #eb1717, #991616);
     background-image: linear-gradient(to bottom, #eb1717, #991616);
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
     font-family: 'Aldrich', sans-serif !important;
     color: #ffffff;
     font-size: 20px;
@@ -164,9 +164,6 @@ a:visited {
     background-image: -ms-linear-gradient(top, #4cff52, #17994f);
     background-image: -o-linear-gradient(top, #4cff52, #17994f);
     background-image: linear-gradient(to bottom, #4cff52, #17994f);
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
     font-family: 'Aldrich', sans-serif !important;
     color: #ffffff;
     font-size: 20px;
@@ -185,9 +182,7 @@ a:visited {
 }
 
 
-#top {
-    margin-top: 120px;
-}
+#top { /*:(*/ }
 
 #home {
     width: 50px;
@@ -195,7 +190,7 @@ a:visited {
 
 .expandable {
     background-color: #444444;
-    padding-top: 1%;
+    padding: 1% 0 2% 0;
 }
 
 #top ul li {
@@ -262,23 +257,59 @@ a:visited {
 }
 
 #news {
-    height: 475px;
+    padding-bottom: 2%;
     float: left;
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
     background-color: #444444;
     margin: 1% 0% 5% 0%;
 }
 
+#middle {
+    width: 1000px;
+    height: 500px; /*blaze it*/
+}
+
+#slideshow {
+    /*background-color: orange;*/
+    position: relative;
+    float: left;
+    width: 667px;
+    height: 500px;
+}
+
+#slideshow img {
+    float: left;
+    width: inherit;
+    height: inherit;
+}
+
+#captions {
+    position: absolute;
+    float: left;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 667px;
+    height: 90px;
+}
+
+#news {
+    background-color: #545454;
+    height: 500px;
+    width: 310px;
+    margin: 0 0 0 0;
+    float: right;
+}
+
 .row {
     display: table;
+    padding: 0 5% 0 5%;
 }
 
 .lcol {
-    padding: 0 0 0 5%;
+
 }
 
 .rcol {
-    padding: 0 5% 0 0;
     display: table-cell;
 }
 
@@ -288,4 +319,8 @@ a:visited {
 
 .trophy {
     width: 30px;
+}
+
+.slide img {
+    min-width: 100%;
 }

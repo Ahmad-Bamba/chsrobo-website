@@ -9,6 +9,8 @@
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+
 </head>
 
 <body>
@@ -16,12 +18,31 @@
         //sorry for being lazy :(
        function toggle_visibility(id) {
            var e = document.getElementById(id);
-           if(e.style.display == 'block')
-              e.style.display = 'none';
-           else
+           if(e.style.display == 'block') {
+               e.style.display = 'none';
+           } else {
+              close_all();
               e.style.display = 'block';
+           }
+       }
+
+       function close_all() {
+           document.getElementById('about').style.display = 'none';
+           document.getElementById('first').style.display = 'none';
+           document.getElementById('outreach').style.display = 'none';
+           document.getElementById('sponsor').style.display = 'none';
+           document.getElementById('retu').style.display = 'none';
+           document.getElementById('calendar').style.display = 'none';
+           document.getElementById('contact').style.display = 'none';
        }
        </script>
+    <div style="padding: 110px 0 0 0; margin-bottom: 0">
+        <center>
+            <h4 style="font-size: 80px;">
+                Chantilly Robotics 612
+            </h4>
+        </center>
+    </div>
     <div id="header">
         <a href="index.html">
             <img src="img/logo.png" id="logoimg">
@@ -206,68 +227,36 @@
         </div>
     </div>
 
-    <div class="row">
-        <div id="content" class="w3-half lcol">
+    <center>
+        <div id="middle">
             <div id="slideshow">
-                <img src="img/slideshow/1.jpg" style="max-width: 95%;" title="Sad static slideshow :(">
-                <div id="slmenu">
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li id="last">4</li>
-                    </ul>
+                <img src="img/slideshow/1.jpg" title="Sad static slideshow :(" />
+                <div id="captions">
+                    <div id="captiontext" style="width: 100%; height: 100%">
+                        <center><p>Programming Captain Ahmad Bamba mentoring future engineers at Cresswood Elementary.</p><center>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div id="main" class="w3-half rcol">
-            <div id="news" class="w3-rest">
-                    <h1>News Real!</h1>
-
-                    <h3>Blah blah blah</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend tristique urna nec auctor.
-                        Nulla venenatis quis velit sed euismod. Ut iaculis fringilla purus, nec sollicitudin ex pretium sed.
-                        Vestibulum aliquet urna ut nisi dignissim pulvinar. Nunc urna neque, malesuada ut sem vitae, sagittis
-                        interdum ligula. Pellentesque fringilla ex ac pretium cursus. Nam non gravida lorem, ac imperdiet metus.
-                        Cras pellentesque ut purus eu dictum. Fusce leo neque, sagittis id tortor at, rhoncus malesuada neque.
-                        Integer interdum tempus sagittis. Aliquam erat volutpat. Fusce id ex a purus iaculis eleifend convallis
-                        eget libero. Aenean pulvinar ultrices augue. Curabitur tempus sapien in malesuada lobortis. Suspendisse potenti.
-                        Fusce sagittis augue nibh, ut ultricies nisl scelerisque non.
-                    </p>
-
-                    <h3>Blah blah blah</h3>
-                    <p>
-                        Vivamus tincidunt turpis mi, non fermentum urna bibendum et. Cras feugiat, nisi eget dignissim ultrices,
-                        lectus mauris vehicula turpis, at rutrum ipsum nibh non enim. Aenean nec condimentum sem, a tempus ex. Donec
-                        commodo cursus lacus, nec eleifend lacus. Phasellus augue leo, sagittis a dolor at, fermentum scelerisque ante.
-                        Mauris porttitor magna vel turpis imperdiet, eget lacinia metus varius. Sed nulla nisl, venenatis vitae magna in,
-                        hendrerit vulputate mauris. Sed nec tristique nunc, sit amet rhoncus nisl. Nam luctus luctus est ut venenatis. Proin
-                        neque nibh, vulputate vel lacus nec, pretium tincidunt orci. Vestibulum blandit scelerisque sapien in feugiat. Suspendisse
-                        potenti. Praesent semper dui orci, fermentum ullamcorper tortor rutrum id. Ut ornare sit amet arcu eu fringilla. Praesent
-                        id vehicula libero.
-                    </p>
-
-                    <h3>Blah blah blah</h3>
-                    <p>
-                        Mauris nunc odio, ullamcorper scelerisque erat non, viverra mollis justo. Phasellus ut pretium justo. Duis sit amet porta
-                        magna, at tempus nisi. Integer ut eros sed lorem scelerisque vestibulum eget tincidunt metus. Fusce at arcu ut leo eleifend
-                        fringilla et id arcu. Pellentesque non mauris at diam imperdiet posuere in eget leo. Ut eget lacus enim. Morbi volutpat varius
-                        facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam tristique gravida varius. Quisque sollicitudin
-                        sollicitudin ligula, et vehicula tortor volutpat ut. Donec in ornare quam, et ornare urna. Etiam efficitur nisi ac consequat
-                        varius. Mauris tincidunt, magna eu iaculis fringilla, enim lorem laoreet urna, et iaculis quam lorem eu lorem. Suspendisse
-                        potenti.
-                    </p>
+            <div id="news" style="text-align: left !important; padding: 0 1% 0 1%;">
+                <h1>Recent News!</h1>
+                <h3>Title1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <h3>Title2</h3>
+                <p>
+                    Ut elementum vel urna nec convallis. Vestibulum sed orci elit. Cras
+                    sed tincidunt lorem. Sed dictum consequat orci, et varius erat imperdiet sed.
+                </p>
+                <h3>Title3</h3>
+                <p>
+                    Fusce ullamcorper enim libero, sit amet vehicula est interdum in. Fusce nec nisl
+                    ipsum. Aliquam at pharetra augue. Cras id elit ut lorem tristique efficitur.
+                </p>
             </div>
-
-            <!--
-            <div id="calendar_again">
-                <iframe src="https://calendar.google.com/calendar/embed?src=ahmad.eb.bamba%40gmail.com&ctz=America/New_York" style="border: 0; width: 100%; height: 300px" frameborder="0" scrolling="no" class="w3-rest"></iframe>
-            </div>
-            -->
         </div>
-    </div>
+    </center>
 
     <div id="Welcome">
         <center><h1>Six what??!?!</h1></center>
@@ -289,48 +278,33 @@
         </div>
     </center>
 
-    <div class="row">
-        <div class="lcol w3-half">
-            <center><h1>Awards:</h1></center>
-            <p>
-                <img src="img/trophy.png" class="trophy"> Engineering Inspiration: 2015, 2014
-            </p>
-            <p>
-                <img src="img/trophy.png" class="trophy"> World Champtionship Appearance: 2015, 2014
-            </p>
-            <p>
-                <img src="img/trophy.png" class="trophy"> Team Spirit: 2016
-            </p>
-            <p>
-                <img src="img/trophy.png" class="trophy"> Hot cool award: 2013, 2012, 2011
-            </p>
-            <p>
-                <img src="img/trophy.png" class="trophy"> Hot cool award: 2016, 2010
-            </p>
+    <center>
+        <div class="row">
+            <div class="lcol w3-half">
+                <center><h1>Awards:</h1></center>
+                <p>
+                    <img src="img/trophy.png" class="trophy"> Engineering Inspiration: 2015, 2014
+                </p>
+                <p>
+                    <img src="img/trophy.png" class="trophy"> World Champtionship Appearance: 2015, 2014
+                </p>
+                <p>
+                    <img src="img/trophy.png" class="trophy"> Team Spirit: 2016
+                </p>
+                <p>
+                    <img src="img/trophy.png" class="trophy"> Hot cool award: 2013, 2012, 2011
+                </p>
+                <p>
+                    <img src="img/trophy.png" class="trophy"> Hot cool award: 2016, 2010
+                </p>
 
+            </div>
+            <div class="rcol w3-half">
+                <center><h1>Meet our Sponsors</h1></center>
+                <center><a href="sponsors.html"><img src="img/sponsors.png" style="width: 80%; paddng: 0 0 0 3%" /></a></center>
+            </div>
         </div>
-        <div class="rcol w3-half">
-            <center><a href="sponsors.html"><h1>Meet our Sponsors</h1></a></center>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus luctus congue.
-                Donec sed lacus massa. Sed ut ligula quis magna aliquam ornare. Aliquam in varius purus.
-                Maecenas finibus iaculis risus ac pretium. Pellentesque consectetur leo non leo placerat, sit
-                amet aliquam nisl ultrices. Duis tristique arcu sed lacus rhoncus accumsan. Vestibulum fringilla
-                luctus augue, a commodo nunc faucibus sit amet. In elementum mattis lobortis. In faucibus orci eget
-                mattis imperdiet. Curabitur dignissim augue in rutrum egestas. Sed mollis vestibulum ligula sit amet accumsan.
-            </p>
-
-            <p>
-                Aliquam finibus tempus pellentesque. Sed sed maximus ligula. Donec auctor id justo elementum ultricies.
-                Etiam mattis nisi dolor, id rhoncus nibh blandit mattis. Ut dapibus ipsum et ante iaculis finibus.
-                Vivamus mattis pretium metus, eget rutrum dolor egestas et. Aenean varius ligula urna, cursus fringilla dui
-                sodales non. Integer vitae quam non sapien facilisis mattis. Nullam in bibendum orci. Aenean blandit nisi et
-                odio molestie, non malesuada nisi placerat. Morbi sollicitudin vulputate scelerisque. Pellentesque congue
-                magna ac felis efficitur, a porta urna tempor. Curabitur at porttitor tellus. Donec non sapien hendrerit,
-                lacinia mauris eu, bibendum arcu.
-            </p>
-        </div>
-    </div>
+    </center>
 
     <div id="end" style="background-color: black; overflow-y: auto;">
         <center>

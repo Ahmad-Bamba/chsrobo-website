@@ -193,6 +193,10 @@ a:visited {
     padding: 1% 0 2% 0;
 }
 
+.expandable p {
+    padding: 0 0 0 1%;
+}
+
 #top ul li {
     display: inline-block;
 }
@@ -256,14 +260,6 @@ a:visited {
     content: "";
 }
 
-#news {
-    padding-bottom: 2%;
-    float: left;
-    /*overflow-y: scroll;*/
-    background-color: #444444;
-    margin: 1% 0% 5% 0%;
-}
-
 #middle {
     width: 1000px;
     height: 500px; /*blaze it*/
@@ -298,6 +294,8 @@ a:visited {
     width: 310px;
     margin: 0 0 0 0;
     float: right;
+    overflow-y: scroll;
+    padding-right: 17px;
 }
 
 .row {
